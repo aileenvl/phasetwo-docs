@@ -10,13 +10,13 @@ module.exports = {
   organizationName: "p2-inc",
   projectName: "p2-inc.github.io",
   deploymentBranch: "main",
+  onBrokenAnchors: 'ignore',
   trailingSlash: true,
   plugins: [
     ['@orama/plugin-docusaurus-v3', {
-      mode: "cloud",
       cloud: {
         indexId: process.env.ORAMA_CLOUD_INDEX_ID,
-        oramaCloudAPIKey: process.env.ORAMA_CLOUD_API_KEY,
+        apiKey: process.env.ORAMA_CLOUD_API_KEY,
         deploy: "default"
       }
     }],

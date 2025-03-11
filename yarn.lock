@@ -2288,27 +2288,27 @@
   resolved "https://registry.npmjs.org/@orama/orama/-/orama-2.1.1.tgz"
   integrity sha512-euTV/2kya290SNkl5m8e/H1na8iDygk74nNtl4E0YZNyYIrEMwE1JwamoroMKGZw2Uz+in/8gH3m1+2YfP0j1w==
 
-"@orama/orama@^3.0.0", "@orama/orama@3.0.8":
-  version "3.0.8"
-  resolved "https://registry.npmjs.org/@orama/orama/-/orama-3.0.8.tgz"
-  integrity sha512-k4YX2iyIPbme0MKKaK22j77KX1woYkK7Zgz6QI4Buda+3mmzzk8/TlKLcKAYPgczTAjSWbH/OoqStfttMtKVLA==
+"@orama/orama@^3.0.0", "@orama/orama@^3.1.2", "@orama/orama@3.1.2":
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/@orama/orama/-/orama-3.1.2.tgz"
+  integrity sha512-+A0VRkr8zSFg+cRfu1VyduuPrWWQeUunxZCi5JvBU4JpLx1/qZoWhplXCjGed5GJnL0nPrHXkBDG40Vb2zKOBQ==
 
-"@orama/plugin-analytics@3.0.8":
-  version "3.0.8"
-  resolved "https://registry.npmjs.org/@orama/plugin-analytics/-/plugin-analytics-3.0.8.tgz"
-  integrity sha512-/P13XN+JxBwUN88HbYPjAMbV3AbGvBxyCA3X57RaC9RhxteUGbMV7bpbpq5nYKBOiAXitHx44x96Kd2k2h37KA==
+"@orama/plugin-analytics@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/@orama/plugin-analytics/-/plugin-analytics-3.1.2.tgz"
+  integrity sha512-w8S1OwLb7alcvuQdUjwFqS11IWPITTMEQ0ty7zC6GGuAVxk1Ccj4OkTFZBc8/6hPmzWPPFAcUodjrIVCpMNLSA==
   dependencies:
-    "@orama/orama" "3.0.8"
+    "@orama/orama" "3.1.2"
 
-"@orama/plugin-docusaurus-v3@^3.0.8":
-  version "3.0.8"
-  resolved "https://registry.npmjs.org/@orama/plugin-docusaurus-v3/-/plugin-docusaurus-v3-3.0.8.tgz"
-  integrity sha512-3th1onrgJELSF2G7EUO/NvxrbJtBwvxq82JuTdzmJ8pDQ4RWYBlHZkQE7WU9kwqsy+mWmJ8Y31HgJzaE8Xn3pg==
+"@orama/plugin-docusaurus-v3@^3.1.8":
+  version "3.1.8"
+  resolved "http://localhost:4873/@orama/plugin-docusaurus-v3/-/plugin-docusaurus-v3-3.1.8.tgz"
+  integrity sha512-w+kddCjcHkZxEnV13DzY28X1FVkFBGQTDYijOpKlhVhjbHQISPRk0TXIUiChnC9cz7GyNv8/L5skd130GbqqXQ==
   dependencies:
     "@orama/highlight" "^0.1.5"
-    "@orama/orama" "3.0.8"
-    "@orama/plugin-analytics" "3.0.8"
-    "@orama/plugin-parsedoc" "3.0.8"
+    "@orama/orama" "^3.1.2"
+    "@orama/plugin-analytics" "^3.1.2"
+    "@orama/plugin-parsedoc" "^3.1.2"
     "@orama/react-components" "^0.5.0"
     "@oramacloud/client" "^1.3.16"
     github-slugger "^2.0.0"
@@ -2319,12 +2319,12 @@
     tslib "^2.6.2"
     vfile-message "^3.1.4"
 
-"@orama/plugin-parsedoc@3.0.8":
-  version "3.0.8"
-  resolved "https://registry.npmjs.org/@orama/plugin-parsedoc/-/plugin-parsedoc-3.0.8.tgz"
-  integrity sha512-amu2j5tmC00FdcpglKHVbIVjgmQ4rB7d21gKzM2Jpn8UGmM3Gv8mRsl711d4V2JAb06H3dvV4REPNnEzhx6DlA==
+"@orama/plugin-parsedoc@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/@orama/plugin-parsedoc/-/plugin-parsedoc-3.1.2.tgz"
+  integrity sha512-Pzjjxf6kfsh0n/gfwNU+bduWFY2tgCBpDfOyjsmYiwctKpBDcLEe9nQdrQV+ElSQBqHuw+Hd0LMq/S0+HzSaJA==
   dependencies:
-    "@orama/orama" "3.0.8"
+    "@orama/orama" "3.1.2"
     glob "^8.1.0"
     hast-util-from-html "^1.0.1"
     hast-util-from-string "^2.0.0"
@@ -2337,6 +2337,13 @@
     remark-parse "^10.0.1"
     remark-rehype "^10.1.0"
     unified "^10.1.2"
+
+"@orama/plugin-secure-proxy@^3.1.2":
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/@orama/plugin-secure-proxy/-/plugin-secure-proxy-3.1.2.tgz"
+  integrity sha512-k4pNcCVK160qNIX5IuXtFp8uZ/8mR1izXWIUruS9L8w2NIWgEV0U9/of799PlsgVYdqIuTuLnIChyACPSD9hxg==
+  dependencies:
+    "@oramacloud/client" "^1.3.11"
 
 "@orama/react-components@^0.5.0":
   version "0.5.1"
@@ -2370,7 +2377,7 @@
     shiki "^1.10.3"
     sse.js "^2.5.0"
 
-"@oramacloud/client@^1.3.16":
+"@oramacloud/client@^1.3.11", "@oramacloud/client@^1.3.16":
   version "1.3.20"
   resolved "https://registry.npmjs.org/@oramacloud/client/-/client-1.3.20.tgz"
   integrity sha512-UIN4l4KTcM6kpZQXakhQVQZinok6USFr7yEZM45fnS5ziW0jfVG8tjA2OhaLhQe0B9lHf5Wsio+PdwVUzgy0Xw==
