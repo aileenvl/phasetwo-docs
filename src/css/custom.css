@@ -297,9 +297,6 @@ a:hover {
   padding: 0 var(--ifm-pre-padding);
 }
 
-.navbar {
-  backdrop-filter: blur(3px);
-}
 .navbar .navbar__inner {
   width: var(--inner-width);
   margin: 0 auto;

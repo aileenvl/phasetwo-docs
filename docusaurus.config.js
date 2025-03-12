@@ -10,10 +10,10 @@ module.exports = {
   organizationName: "p2-inc",
   projectName: "p2-inc.github.io",
   deploymentBranch: "main",
-  onBrokenAnchors: 'ignore',
   trailingSlash: true,
   plugins: [
     ['@orama/plugin-docusaurus-v3', {
+      mode:"cloud",
       cloud: {
         indexId: process.env.ORAMA_CLOUD_INDEX_ID,
         apiKey: process.env.ORAMA_CLOUD_API_KEY,
@@ -369,12 +369,6 @@ module.exports = {
       sidebar: {
         autoCollapseCategories: true
       }
-    },
-    algolia: {
-      appId: "W4PN7W5A70",
-      apiKey: "0a2a3edf5aedd6c4ec8388acc22b2a04",
-      indexName: "phasetwo",
-      contextualSearch: true
     },
     prism: {
       additionalLanguages: ["java", "yaml"]
