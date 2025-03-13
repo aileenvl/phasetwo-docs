@@ -13,12 +13,37 @@ module.exports = {
   trailingSlash: true,
   plugins: [
     ['@orama/plugin-docusaurus-v3', {
-      mode:"cloud",
+      mode: "cloud",
       cloud: {
         indexId: process.env.ORAMA_CLOUD_INDEX_ID,
         apiKey: process.env.ORAMA_CLOUD_API_KEY,
         deploy: "default"
-      }
+      },
+      searchbox: {
+        placeholder: "Search...",
+        suggestions: [
+          'What is PhaseTwo?',
+          'How to setup a React JS project?',
+          'How to get started?'
+        ],
+        themeConfig: {
+          light: {
+            "--text-color-accent": "#1f8dd7",
+            "--border-color-accent": "#3fa1e3",
+            "--icon-color-accent": "#3fa1e3",
+            "--background-color-tertiary": "#ebf5fc",
+            "--button-background-color-primary": "#58ade7",
+            "--button-background-color-secondary-hover": "#ebf5fc",
+            "--button-border-color-secondary": "#ebf5fc",
+            "--chat-button-border-color-gradientThree": "#3fa1e3",
+            "--chat-button-border-color-gradientFour": "#3fa1e3",
+            "--chat-button-background-color-gradientOne": "#58ade7",
+            "--chat-button-background-color-gradientTwo": "#3fa1e3"
+          }
+        },
+        colorScheme: "light",
+      },
+      
     }],
     require.resolve("./sitePlugin"),
     [
